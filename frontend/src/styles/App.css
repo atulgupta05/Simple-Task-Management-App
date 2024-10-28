@@ -1,0 +1,164 @@
+/* Basic Reset */
+* {
+    margin-top: 50px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  /* App Container */
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* App Title */
+  .app h1 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  /* Add Task Form */
+  .add-task {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .add-task input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .add-task select,
+  .add-task button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-task select {
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 150px;
+  }
+  
+  .add-task button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    transition: background 0.3s;
+  }
+  
+  .add-task button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Task List */
+  .task-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Task Item */
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  .task-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .task-item.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  /* Task Item Text */
+  .task-item span {
+    font-size: 1rem;
+  }
+  
+  .task-item button {
+    padding: 8px;
+    font-size: 0.9rem;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .task-item button:nth-child(3) {
+    background-color: #2196F3;
+  }
+  
+  .task-item button:nth-child(4) {
+    background-color: #f44336;
+  }
+  
+  .task-item button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .app {
+      padding: 10px;
+      max-width: 100%;
+    }
+  
+    .add-task {
+      flex-direction: column;
+    }
+  
+    .add-task input[type="text"],
+    .add-task select,
+    .add-task button {
+      width: 100%;
+      margin: 5px 0;
+    }
+  
+    .task-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .task-item span,
+    .task-item button {
+      width: 100%;
+      text-align: left;
+      margin-top: 5px;
+    }
+  }  
