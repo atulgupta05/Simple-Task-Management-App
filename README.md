@@ -1,6 +1,6 @@
 # Simple Task Management App
 
-A simple task management application built using the MERN stack (MongoDB, Express, React, Node.js), where users can add, view, complete, delete, and prioritize tasks. This app uses React for the frontend, an Express API backend with SQLite for data storage, and local storage for additional data persistence on the frontend.
+A simple task management application built using the React and Express (Express, React), where users can add, view, complete, delete, and prioritize tasks. This app uses React for the frontend, an Express API backend with SQLite for data storage, and local storage for additional data persistence on the frontend.
 
 ## Table of Contents
 
